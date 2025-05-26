@@ -1,0 +1,167 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 3px 3px  #4f116a;
+  background-image: url("/public/future.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-board {
+  align-items: center;
+  justify-content: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #098fe8;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 2px 2px #4f116a;
+}
+
+#linha1 .square {
+  background: linear-gradient(
+    to bottom,
+    #090015,  
+    #12002a,  
+    #1c003f
+  );
+}
+
+#linha1 .square:hover {
+  background: linear-gradient(
+  to bottom,
+    #090015,  
+    #3f048d,  
+    #6507d8
+    );
+}
+
+#linha2 .square {
+  background: linear-gradient(
+    to top, 
+    #1c003f,
+    #1c003f,
+    #1c003f
+
+  );
+}
+
+#linha2 .square:hover {
+  background: linear-gradient(
+    to bottom,
+    #6507d8,
+    #3f048d,
+    #2d0663,
+    #3f048d,
+    #6507d8
+    );
+}
+
+#linha3 .square {
+  background: linear-gradient(
+    to top, 
+    #090015, 
+    #12002a,  
+    #1c003f
+  );
+}
+
+#linha3 .square:hover {
+  background: linear-gradient(
+    to bottom,
+    #6507d8,  
+    #3f048d,  
+    #090015
+    );
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.game-info {
+  margin-top: 10%;
+}
+
+.game-info ol {
+  padding-left: 30px;
+}
+
+.game-info button {
+  background: linear-gradient(
+    to bottom,
+    #090015,  
+    #12002a,  
+    #1c003f,
+    #12002a,
+    #090015
+    );
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.game-info button:hover {
+  background: linear-gradient(
+    to bottom,
+    #6507d8,
+    #3f048d,
+    #2d0663,
+    #3f048d,
+    #6507d8
+    );
+}
+
+.botao, .botao2 {
+  border-bottom: 2px solid #098fe8 !important;
+  border-top: 2px solid #098fe8 !important;
+  border-right: 2px solid #098fe8 !important;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px #4f116a;
+}
+
+.botao {
+  border-left: 2px solid #098fe8 !important;
+}
